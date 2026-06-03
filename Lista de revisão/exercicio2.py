@@ -11,4 +11,34 @@ print('Exercício n°2 - Lista de revisão')
 
 print('a) A soma de todos os números pares entre 2 e 100 (inclusive).')
 
-print_separator
+soma = 0
+for i in range(2,101,2):
+    soma += i
+
+print(soma)
+
+# ou
+# soma = 0
+
+# for i in range(2, 101):
+#     if i % 2 == 0:
+#         soma += i
+
+# print(soma)
+
+
+print_separator()
+print('b) A soma de todos os quadrados entre 1 e 100 (inclusive).')
+
+soma = 0
+for i in range(1,101):
+    soma += i ** 2
+
+print(soma)
+
+print_separator()
+print('c) A soma de todos os números ímpares entre a e b.')
+soma = 0
+
+a = int(input('Digite o valor de a: '))
+b = int(input('Digite o valor de b: '))
